@@ -1,4 +1,4 @@
-# -*- coding: utf8 -*-
+# coding=utf-8
 """
  github.com/wensheng/word2banner
 """
