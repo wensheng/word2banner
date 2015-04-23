@@ -4,6 +4,7 @@
 """
 
 import sys
+import os
 import math
 import platform
 from io import BytesIO
@@ -26,7 +27,7 @@ else:
     exit()
 
 cfg = ConfigParser()
-cfg.read('word2banner.ini')
+cfg.read(os.path.join(os.path.realpath(os.path.dirname(__file__)), 'word2banner.ini'))
 
 margin = cfg.getint(sname, 'margin')
 
